@@ -24,7 +24,7 @@ export default function PushTokenGenerator() {
           return;
         }
 
-        const expoPushToken = (await Notifications.getExpoPushTokenAsync())
+        const expoPushToken = (await Notifications.getDevicePushTokenAsync())
           .data;
         console.log("Expo Push Token:", expoPushToken);
 
